@@ -20,7 +20,7 @@ class LabExerciseRestController(
         produces = [MediaType.APPLICATION_JSON_VALUE]
     )
     fun getAllLabExercises() : ResponseEntity<Any> =
-        ResponseEntity(labExerciseService.getALLLabExercises(), HttpStatus.OK)
+        ResponseEntity(labExerciseService.getAllLabExercises(), HttpStatus.OK)
 
 
     @GetMapping(

@@ -20,7 +20,7 @@ class DepartmentRestController(
         produces = [MediaType.APPLICATION_JSON_VALUE]
     )
     fun getAllDepartments() : ResponseEntity<Any> =
-        ResponseEntity(departmentService.getALLDepartments(), HttpStatus.OK)
+        ResponseEntity(departmentService.getAllDepartments(), HttpStatus.OK)
 
 
     @GetMapping(

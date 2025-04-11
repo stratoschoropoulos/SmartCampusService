@@ -20,7 +20,7 @@ class LabRestController(
         produces = [MediaType.APPLICATION_JSON_VALUE]
     )
     fun getAllLabs() : ResponseEntity<Any> =
-        ResponseEntity(labService.getALLLabs(), HttpStatus.OK)
+        ResponseEntity(labService.getAllLabs(), HttpStatus.OK)
 
 
     @GetMapping(

@@ -10,7 +10,7 @@ class DepartmentService(
     val departmentRepository: DepartmentRepository
 ) {
 
-    fun getALLDepartments(): MutableList<Department> = departmentRepository.findAll()
+    fun getAllDepartments(): MutableList<Department> = departmentRepository.findAll()
 
     fun getDepartmentById(id : UUID) = departmentRepository.findById(id)
 

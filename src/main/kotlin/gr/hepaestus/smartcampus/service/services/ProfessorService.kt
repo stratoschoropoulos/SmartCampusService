@@ -10,7 +10,7 @@ class ProfessorService(
     val professorRepository: ProfessorRepository
 ) {
 
-    fun getALLProfessors(): MutableList<Professor> = professorRepository.findAll()
+    fun getAllProfessors(): MutableList<Professor> = professorRepository.findAll()
 
     fun getProfessorById(id : UUID) = professorRepository.findById(id)
 

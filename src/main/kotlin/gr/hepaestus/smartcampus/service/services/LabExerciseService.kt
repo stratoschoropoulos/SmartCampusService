@@ -10,7 +10,7 @@ class LabExerciseService(
     val labExerciseRepository: LabExerciseRepository
 ) {
 
-    fun getALLLabExercises(): MutableList<LabExercise> = labExerciseRepository.findAll()
+    fun getAllLabExercises(): MutableList<LabExercise> = labExerciseRepository.findAll()
 
     fun getLabExerciseById(id : UUID) = labExerciseRepository.findById(id)
 

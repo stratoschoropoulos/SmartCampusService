@@ -10,7 +10,7 @@ class TeamService(
     val teamRepository: TeamRepository
 ) {
 
-    fun getALLTeams(): MutableList<Team> = teamRepository.findAll()
+    fun getAllTeams(): MutableList<Team> = teamRepository.findAll()
 
     fun getTeamById(id : UUID) = teamRepository.findById(id)
 

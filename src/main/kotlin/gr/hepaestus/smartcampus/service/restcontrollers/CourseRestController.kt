@@ -20,7 +20,7 @@ class CourseRestController(
         produces = [MediaType.APPLICATION_JSON_VALUE]
     )
     fun getAllCourses() : ResponseEntity<Any> =
-        ResponseEntity(courseService.getALLCourses(), HttpStatus.OK)
+        ResponseEntity(courseService.getAllCourses(), HttpStatus.OK)
 
 
     @GetMapping(

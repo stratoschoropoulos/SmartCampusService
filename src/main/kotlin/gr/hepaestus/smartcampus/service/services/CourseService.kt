@@ -10,7 +10,7 @@ class CourseService(
     val courseRepository: CourseRepository
 ) {
 
-    fun getALLCourses(): MutableList<Course> = courseRepository.findAll()
+    fun getAllCourses(): MutableList<Course> = courseRepository.findAll()
 
     fun getCourseById(id : UUID) = courseRepository.findById(id)
 

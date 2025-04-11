@@ -20,7 +20,7 @@ class ProfessorRestController(
         produces = [MediaType.APPLICATION_JSON_VALUE]
     )
     fun getAllProfessors() : ResponseEntity<Any> =
-        ResponseEntity(professorService.getALLProfessors(), HttpStatus.OK)
+        ResponseEntity(professorService.getAllProfessors(), HttpStatus.OK)
 
 
     @GetMapping(

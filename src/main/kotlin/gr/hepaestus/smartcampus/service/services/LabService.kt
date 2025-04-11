@@ -10,7 +10,7 @@ class LabService(
     val labRepository: LabRepository
 ) {
 
-    fun getALLLabs(): MutableList<Lab> = labRepository.findAll()
+    fun getAllLabs(): MutableList<Lab> = labRepository.findAll()
 
     fun getLabById(id : UUID) = labRepository.findById(id)
 

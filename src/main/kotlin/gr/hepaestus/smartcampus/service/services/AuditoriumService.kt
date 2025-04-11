@@ -10,7 +10,7 @@ class AuditoriumService(
     val auditoriumRepository: AuditoriumRepository
 ) {
 
-    fun getALLAuditoriums(): MutableList<Auditorium> = auditoriumRepository.findAll()
+    fun getAllAuditoriums(): MutableList<Auditorium> = auditoriumRepository.findAll()
 
     fun getAuditoriumById(id : UUID) = auditoriumRepository.findById(id)
 

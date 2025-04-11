@@ -20,7 +20,7 @@ class CourseExerciseRestController(
         produces = [MediaType.APPLICATION_JSON_VALUE]
     )
     fun getAllCourseExercises() : ResponseEntity<Any> =
-        ResponseEntity(courseExerciseService.getALLCourseExercises(), HttpStatus.OK)
+        ResponseEntity(courseExerciseService.getAllCourseExercises(), HttpStatus.OK)
 
 
     @GetMapping(

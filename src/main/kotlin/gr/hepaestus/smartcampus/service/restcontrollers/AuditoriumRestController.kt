@@ -20,7 +20,7 @@ class AuditoriumRestController(
         produces = [MediaType.APPLICATION_JSON_VALUE]
     )
     fun getAllAuditoriums() : ResponseEntity<Any> =
-        ResponseEntity(auditoriumService.getALLAuditoriums(), HttpStatus.OK)
+        ResponseEntity(auditoriumService.getAllAuditoriums(), HttpStatus.OK)
 
 
     @GetMapping(

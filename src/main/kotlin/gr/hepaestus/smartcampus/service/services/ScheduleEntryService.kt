@@ -10,7 +10,7 @@ class ScheduleEntryService(
     val scheduleEntryRepository: ScheduleEntryRepository
 ) {
 
-    fun getALLScheduleEntries(): MutableList<ScheduleEntry> = scheduleEntryRepository.findAll()
+    fun getAllScheduleEntries(): MutableList<ScheduleEntry> = scheduleEntryRepository.findAll()
 
     fun getScheduleEntryById(id : UUID) = scheduleEntryRepository.findById(id)
 

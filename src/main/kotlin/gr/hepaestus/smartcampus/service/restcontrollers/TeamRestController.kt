@@ -20,7 +20,7 @@ class TeamRestController(
         produces = [MediaType.APPLICATION_JSON_VALUE]
     )
     fun getAllTeams() : ResponseEntity<Any> =
-        ResponseEntity(teamService.getALLTeams(), HttpStatus.OK)
+        ResponseEntity(teamService.getAllTeams(), HttpStatus.OK)
 
 
     @GetMapping(

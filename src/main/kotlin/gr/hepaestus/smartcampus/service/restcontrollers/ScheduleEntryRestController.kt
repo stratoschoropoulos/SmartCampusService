@@ -20,7 +20,7 @@ class ScheduleEntryRestController(
         produces = [MediaType.APPLICATION_JSON_VALUE]
     )
     fun getAllScheduleEntries() : ResponseEntity<Any> =
-        ResponseEntity(scheduleEntryService.getALLScheduleEntries(), HttpStatus.OK)
+        ResponseEntity(scheduleEntryService.getAllScheduleEntries(), HttpStatus.OK)
 
 
     @GetMapping(
